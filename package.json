@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/Zdesyatkov/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/Zdesyatkov/frontend-project-44#readme"
+  "homepage": "https://github.com/Zdesyatkov/frontend-project-44#readme",
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0"
+  }
 }

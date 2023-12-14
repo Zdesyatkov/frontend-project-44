@@ -1,45 +1,25 @@
-install:
+install: install-deps
+	npx simple-git-hooks
+
+run:
+	bin/nodejs-package.js 10
+
+install-deps:
 	npm ci
 
-brain-games:
-	node bin/brain-games.js
+test:
+	npm test
+
+test-coverage:
+	npm test -- --coverage --coverageProvider=v8
+
+lint:
+	npx eslint .
 
 publish:
 	npm publish --dry-run
 
-.DEFAULT_GOAL := build-run
+.PHONY: test
 
-setup:
-	./gradlew wrapper --gradle-version 8.5
-
-clean:
-	./gradlew clean
-
-build:
-	./gradlew clean build
-
-install:
-	./gradlew clean install
-
-run-dist:
-	./build/install/java-package/bin/java-package
-
-run:
-	./gradlew run
-
-test:
-	./gradlew test
-
-report:
-	./gradlew jacocoTestReport
-
-lint:
-	./gradlew checkstyleMain
-
-check-deps:
-	./gradlew dependencyUpdates -Drevision=release
-
-
-build-run: build run
-
-.PHONY: build
+brain-games:
+	node bin/brain-games.js
