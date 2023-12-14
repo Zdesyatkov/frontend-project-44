@@ -2,7 +2,7 @@ install: install-deps
 	npx simple-git-hooks
 
 run:
-	bin/nodejs-package.js 10
+	bin/
 
 install-deps:
 	npm ci
@@ -23,3 +23,6 @@ publish:
 
 brain-games:
 	node bin/brain-games.js
+
+brain-even:
+	node bin/brain-even.js
