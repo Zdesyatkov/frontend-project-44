@@ -5,7 +5,8 @@
   "description": "[![Actions Status](https://github.com/Zdesyatkov/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Zdesyatkov/frontend-project-44/actions)",
   "main": "brain-games.js",
   "bin": {
-    "project": "bin/brain-even.js"
+    "project": "bin/brain-even.js",
+    "project": "bin/brain-calc.js"	
   },
   "dependencies": {
     "lodash": "^4.17.21",
