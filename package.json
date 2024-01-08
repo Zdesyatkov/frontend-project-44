@@ -6,7 +6,9 @@
   "main": "brain-games.js",
   "bin": {
     "project": "bin/brain-even.js",
-    "project": "bin/brain-calc.js"	
+    "project": "bin/brain-calc.js",
+    "project": "bin/gcd-btain.js",
+    "project": "bin/brain-prime.js"	
   },
   "dependencies": {
     "lodash": "^4.17.21",
