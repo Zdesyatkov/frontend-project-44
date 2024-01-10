@@ -8,7 +8,8 @@
     "project": "bin/brain-even.js",
     "project": "bin/brain-calc.js",
     "project": "bin/gcd-btain.js",
-    "project": "bin/brain-prime.js"	
+    "project": "bin/brain-prime.js",
+    "project": "bin/brain-progression.js"	
   },
   "dependencies": {
     "lodash": "^4.17.21",
