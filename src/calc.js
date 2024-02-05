@@ -43,8 +43,11 @@ export const calcGame = () => {
       if (result === Number(answerUser)) {
         console.log('Correct!');
       } else {
-        const errorMessage = `"${answerUser}" is wrong answer ;(. Correct answer was '${result}'. /n Let's try again, ${userName}!`;
-        return errorMessage;
+      const errorMessage1 = (`'${answerUser}' is wrong answer ;(. Correct answer was '${result}'.`);
+      const errorMessage2 = (`Let's try again, ${userName}!`);
+      console.log(errorMessage1);
+      console.log(errorMessage2);
+       return;
       }
     }
    
