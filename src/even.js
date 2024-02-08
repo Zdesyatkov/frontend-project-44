@@ -7,8 +7,8 @@ const userName = getName();
  
 
 // Определение функции, дающее рандомное целое число
-const getRandomInt = (max) => {
-  return Math.floor(Math.random() * max);
+const getRandomInt = (min, max) => {
+  return Math.floor(Math.random(max - min) * max);
 };
  
 // Определение функции игры на четность
@@ -17,7 +17,7 @@ export const evenGame = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
  
   for (let i = 0; i < 3; i += 1) {
-    const number = getRandomInt(20);
+    const number = getRandomInt(1, 20);
     console.log('Question:', number);
     const answerUser = readlineSync.question('Your answer: ');
  
