@@ -10,7 +10,7 @@ const userName = getName();
 const getRandomInt = (min, max) => Math.floor(Math.random(max - min) * max);
 
 // Определение функции игры на четность
-export const gcdGame = () => {
+export default function gcdGame() {
   console.log(`Hello, ${userName}!`);
   console.log('Find the greatest common divisor of given numbers.');
 
@@ -25,11 +25,10 @@ export const gcdGame = () => {
     } else {
       const arr = [];
       let iMax = 0;
-      const result = '';
-      for (let i = 1; i < number1 + number2; i += 1) {
-        if ((number1 % i === 0) && (number2 % i === 0)) {
-          arr.push(i);
-          iMax = i - 1;
+      for (let j = 1; j < number1 + number2; j += 1) {
+        if ((number1 % j === 0) && (number2 % j === 0)) {
+          arr.push(j);
+          iMax = j - 1;
         }
       }
       const errorMessage1 = (`'${answerUser}' is wrong answer ;(. Correct answer was '${arr[iMax]}'.`);
@@ -41,4 +40,4 @@ export const gcdGame = () => {
   }
 
   console.log(`Congratulations, ${userName}!`);
-};
+}

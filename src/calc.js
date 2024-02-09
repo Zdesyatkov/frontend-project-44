@@ -11,7 +11,7 @@ const getRandomInt = (max) => Math.floor(Math.random() * max);
 
 // Определение функции игры калькулятор
 
-export const calcGame = () => {
+export default function calcGame() {
   console.log(`Hello, ${userName}!`);
   console.log('What is the result of the expression?');
   let action = '-';
@@ -49,4 +49,4 @@ export const calcGame = () => {
   }
 
   console.log(`Congratulations, ${userName}!`);
-};
+}

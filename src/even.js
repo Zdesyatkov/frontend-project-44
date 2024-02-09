@@ -9,7 +9,7 @@ const userName = getName();
 const getRandomInt = (min, max) => Math.floor(Math.random(max - min) * max);
 
 // Определение функции игры на четность
-export const evenGame = () => {
+export default function evenGame() {
   console.log(`Hello, ${userName}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
@@ -34,4 +34,4 @@ export const evenGame = () => {
   }
 
   console.log(`Congratulations, ${userName}!`);
-};
+}

@@ -10,7 +10,7 @@ const userName = getName();
 const getRandomInt = (min, max) => Math.floor(Math.random(max - min) * max);
 
 // Определение функции игры на четность
-export const primeGame = () => {
+export default function primeGame() {
   console.log(`Hello, ${userName}!`);
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
@@ -42,4 +42,4 @@ export const primeGame = () => {
   }
 
   console.log(`Congratulations, ${userName}!`);
-};
+}
