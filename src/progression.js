@@ -8,21 +8,20 @@ const userName = getName();
  
 
 // Определение функции, дающее рандомное целое число
-const getRandomInt = (max) => {
-  return Math.floor(Math.random() * max);
+const getRandomInt = (min, max) => {
+  return Math.floor(Math.random(max - min) * max);
 };
 
-// Определение функции игры калькулятор
+// Определение функции игры прогрессия
 
 export const progressionGame = () => {
     console.log(`Hello, ${userName}!`);
     console.log('What is the result of the expression?');
 
-   
-    for (let i = 0; i < 3; i += 1) {
-      let number1 = getRandomInt(10);
-      let number2 = getRandomInt(10);
-      const randomNumber = getRandomInt(8);
+       for (let i = 0; i < 3; i += 1) {
+      let number1 = getRandomInt(1, 10);
+      let number2 = getRandomInt(1, 10);
+      const randomNumber = getRandomInt(1, 8);
       let arr = [];
       for (let j = 0; j < 8; j += 1, number1 = number1 + number2) {
         arr[j] = number1;
@@ -34,8 +33,13 @@ export const progressionGame = () => {
       if (+removed.join('') === Number(answerUser)) {
         console.log('Correct!');
       } else {
-        const errorMessage = `"${Number(answerUser)}" is wrong answer ;(. Correct answer was '${+removed.join('')}'. /n Let's try again, ${userName}!`;
-        return errorMessage;
+        //const errorMessage = `"${Number(answerUser)}" is wrong answer ;(. Correct answer was '${+removed.join('')}'. /n Let's try again, ${userName}!`;
+        const errorMessage1 = (`'${Number(answerUser)}' is wrong answer ;(. Correct answer was '${+removed.join('')}'.`);
+        const errorMessage2 = (`Let's try again, ${userName}!`);
+        console.log(errorMessage1);
+        console.log(errorMessage2);
+               
+        return;
       }
     }
    
