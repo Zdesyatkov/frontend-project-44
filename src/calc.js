@@ -20,7 +20,7 @@ export default function calcGame() {
     const number1 = getRandomInt(10);
     const number2 = getRandomInt(10);
     let result = 0;
-    console.log('Question: ', number1, action, number2);
+    console.log('Question:', number1, action, number2);
     const answerUser = readlineSync.question('Your answer: ');
 
     switch (action) {
