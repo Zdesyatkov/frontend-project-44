@@ -35,6 +35,7 @@ export default function calcGame() {
       case '*':
         result = number1 * number2;
         break;
+      default:
     }
 
     if (result === Number(answerUser)) {
