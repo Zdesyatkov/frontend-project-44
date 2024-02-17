@@ -8,7 +8,7 @@ const getRandomInt = (min, max) => Math.floor(Math.random(max - min) * max);
 // Определение функции игры прогрессия
 export default function progressionGame() {
   console.log(`Hello, ${userName}!`);
-  console.log('What is the result of the expression?');
+  console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
     let number1 = getRandomInt(1, 10);
     const number2 = getRandomInt(1, 10);
