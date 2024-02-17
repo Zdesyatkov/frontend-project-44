@@ -18,7 +18,7 @@ export default function progressionGame() {
       arr[j] = number1;
     }
     const removed = arr.splice(randomNumber, 1, '..');
-    console.log('Question: ', arr.join(' '));
+    console.log('Question:', arr.join(' '));
     const answerUser = readlineSync.question('Your answer: ');
     if (+removed.join('') === Number(answerUser)) {
       console.log('Correct!');

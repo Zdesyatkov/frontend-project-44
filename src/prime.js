@@ -17,7 +17,7 @@ export default function primeGame() {
   for (let i = 0; i < 3; i += 1) {
     const number = getRandomInt(1, 10);
     let sum = 0;
-    console.log('Question: ', number);
+    console.log('Question:', number);
     const answerUser = readlineSync.question('Your answer: ');
 
     for (let j = 1; j <= number; j += 1) {
