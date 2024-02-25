@@ -12,6 +12,9 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-games": "bin/brain-games.js"	
   },
+  "src": {
+    "getRandomInt": "src/getRandomInt.js"
+  },
   "dependencies": {
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
