@@ -30,7 +30,6 @@ const taskCalc = () => {
   }
   return [question, result.toString()];
 };
-
 export default () => {
   basisOfGames(noteToCalc, taskCalc);
 };
