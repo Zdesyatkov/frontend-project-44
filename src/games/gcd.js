@@ -19,7 +19,8 @@ const taskGcd = () => {
       arr.push(j);
       iMax = j - 1;
     }
-  } const result = arr[iMax].toString();
+  } let a = arr[iMax]
+  let result = a.toString();
   return [question, result];
 };
 export default () => {
