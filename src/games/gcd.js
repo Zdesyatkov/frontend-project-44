@@ -12,15 +12,13 @@ const taskGcd = () => {
   const number2 = getRandomInt(1, 20);
 
   const question = `${number1} ${number2}`;
-  const arr = [];
-  let iMax = 0;
-  for (let j = 1; j < number1 + number2; j += 1) {
+  let gcd = 1;
+  for (let j = 1; j < Math.min(number1, number2); j += 1) {
     if ((number1 % j === 0) && (number2 % j === 0)) {
-      arr.push(j);
-      iMax = j - 1;
+      gcd = j;
     }
-  } let a = arr[iMax]
-  let result = a.toString();
+  } let result = gcd.toString();
+
   return [question, result];
 };
 export default () => {
