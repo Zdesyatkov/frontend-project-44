@@ -17,7 +17,7 @@ const taskGcd = () => {
     if ((number1 % j === 0) && (number2 % j === 0)) {
       gcd = j;
     }
-  } let result = gcd.toString();
+  } const result = gcd.toString();
 
   return [question, result];
 };
