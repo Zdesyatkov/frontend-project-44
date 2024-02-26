@@ -3,7 +3,7 @@ import basisOfGames from '../index.js';
 // Определение функции игры калькулятор
 
 const noteToCalc = 'What is the result of the expression?';
-const getRandomInt = (max) => Math.floor(Math.random() * max);
+const getRandomInt = (max) => Math.floor(Math.random(max - 1) * max);
 const taskCalc = () => {
   const number1 = getRandomInt(10);
   const number2 = getRandomInt(10);
@@ -28,7 +28,7 @@ const taskCalc = () => {
     default:
       result = null;
   }
-  return [question, result];
+  return [question, result.toString()];
 };
 
 export default () => {
