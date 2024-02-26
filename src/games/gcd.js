@@ -13,7 +13,7 @@ const taskGcd = () => {
 
   const question = `${number1} ${number2}`;
   let gcd = 1;
-  for (let j = 1; j < Math.min(number1, number2); j += 1) {
+  for (let j = 1; j <= Math.min(number1, number2); j += 1) {
     if ((number1 % j === 0) && (number2 % j === 0)) {
       gcd = j;
     }
