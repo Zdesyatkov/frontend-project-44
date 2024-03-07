@@ -1,8 +1,5 @@
 import basisOfGames from '../index.js';
-
-// Определение функции, дающее рандомное целое число
-const getRandomInt = (min, max) => Math.floor(Math.random(max - min) * max);
-// Определение функции игры прогрессия
+import getRandomInt from '../utils.js';
 
 const noteToProgression = 'What number is missing in the progression?';
 const taskProgression = () => {

@@ -19,12 +19,10 @@ const basisOfGames = (noteToGame, task) => {
     const rightAnswer = pairOfQuestionAndResult[1];
 
     // Проверка
-    if (answerUser === rightAnswer) {
-      console.log('Correct!');
-    } else {
+    if (answerUser !== rightAnswer) {
       console.log(`"${answerUser}" is wrong answer ;(. Correct answer was "${rightAnswer}". \nLet's try again, ${userName}!`);
       return;
-    }
+    } console.log('Correct!');
   }
 
   console.log(`Congratulations, ${userName}!`);

@@ -1,19 +1,17 @@
 import basisOfGames from '../index.js';
+import getRandomInt from '../utils.js';
 
-// Определение функции, дающее рандомное целое число
-const getRandomInt = (min, max) => Math.floor(Math.random(max - min) * max);
-
-// Определение функции игры на четность
+const isEven = (num) => {
+  const result = (num % 2 === 0);
+  return result;
+};
 
 const noteToEven = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const taskEven = () => {
   const number = getRandomInt(1, 20);
   const question = number;
-  let result = 'no';
-  if ((number % 2 === 0)) {
-    result = 'yes';
-  }
+  const result = isEven(number) ? 'yes' : 'no';
   return [question, result];
 };
 
