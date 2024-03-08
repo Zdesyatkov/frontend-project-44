@@ -14,7 +14,7 @@ const noteToProgression = 'What number is missing in the progression?';
 const getQuestionAndAnswer = () => {
   const startValue = getRandomInt(1, 10);
   const step = getRandomInt(1, 10);
-  const length = getRandomInt(1, 8);
+  const length = getRandomInt(5, 11);
   const items = getProgression(length, startValue, step);
   const questionPosition = getRandomInt(length);
 
