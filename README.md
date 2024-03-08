@@ -12,7 +12,7 @@ https://asciinema.org/a/M7KBHbARs4TWabHBkTAZRpQNZ
 
 Ссылка на аскисинему игры "Проверка на четность":
 https://asciinema.org/a/7Rn5GgtQmUQKurDZq76jJvtj1
-![alt text](./image-3.png)
+![alt text](./2024-03-08_15-11-23.png)
 
 Ссылка на аскисинему игры "НОД":
 https://asciinema.org/a/AjqgCRze8c11dtoZ7GDUq6Gpp
