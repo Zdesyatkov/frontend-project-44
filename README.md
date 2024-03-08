@@ -8,6 +8,7 @@
 
 Ссылка на аскисинему игры "Калькулятор":
 https://asciinema.org/a/M7KBHbARs4TWabHBkTAZRpQNZ
+![alt text](./2024-03-08_14-58-44.png)
 
 Ссылка на аскисинему игры "Проверка на четность":
 https://asciinema.org/a/7Rn5GgtQmUQKurDZq76jJvtj1
