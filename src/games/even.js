@@ -8,7 +8,7 @@ const isEven = (num) => {
 
 const noteToEven = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const taskEven = () => {
+const getQuestionAndAnswer = () => {
   const number = getRandomInt(1, 20);
   const question = number;
   const result = isEven(number) ? 'yes' : 'no';
@@ -16,5 +16,5 @@ const taskEven = () => {
 };
 
 export default () => {
-  basisOfGames(noteToEven, taskEven);
+  basisOfGames(noteToEven, getQuestionAndAnswer);
 };

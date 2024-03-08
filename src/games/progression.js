@@ -2,7 +2,7 @@ import basisOfGames from '../index.js';
 import getRandomInt from '../utils.js';
 
 const noteToProgression = 'What number is missing in the progression?';
-const taskProgression = () => {
+const getQuestionAndAnswer = () => {
   let number1 = getRandomInt(1, 10);
   const number2 = getRandomInt(1, 10);
   const randomNumber = getRandomInt(1, 8);
@@ -16,5 +16,5 @@ const taskProgression = () => {
   return [question, result.toString()];
 };
 export default () => {
-  basisOfGames(noteToProgression, taskProgression);
+  basisOfGames(noteToProgression, getQuestionAndAnswer);
 };

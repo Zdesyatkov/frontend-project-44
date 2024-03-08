@@ -16,11 +16,12 @@ const calculation = (operation, value1, value2) => {
   }
 };
 
-const taskCalc = () => {
+const signs = ['+', '-', '*'];
+
+const getQuestionAndAnswer = () => {
   const number1 = getRandomInt(10);
   const number2 = getRandomInt(10);
 
-  const signs = ['+', '-', '*'];
   const sign = signs[getRandomInt(3)];
 
   const question = `${number1} ${sign} ${number2}`;
@@ -28,5 +29,5 @@ const taskCalc = () => {
   return [question, result];
 };
 export default () => {
-  basisOfGames(noteToCalc, taskCalc);
+  basisOfGames(noteToCalc, getQuestionAndAnswer);
 };

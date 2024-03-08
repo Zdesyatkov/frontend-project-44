@@ -9,7 +9,7 @@ const getGcd = (a, b) => {
   return getGcd(b, a % b);
 };
 
-const taskGcd = () => {
+const getQuestionAndAnswer = () => {
   const number1 = getRandomInt(1, 20);
   const number2 = getRandomInt(1, 20);
 
@@ -19,5 +19,5 @@ const taskGcd = () => {
   return [question, result];
 };
 export default () => {
-  basisOfGames(noteToGsd, taskGcd);
+  basisOfGames(noteToGsd, getQuestionAndAnswer);
 };

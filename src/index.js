@@ -10,7 +10,8 @@ const basisOfGames = (noteToGame, task) => {
   console.log(noteToGame);
 
   // Начало цикла игры
-  for (let i = 0; i < 3; i += 1) {
+  const attepmts = 3;
+  for (let i = 0; i < attepmts; i += 1) {
     const pairOfQuestionAndResult = task();
     console.log('Question:', pairOfQuestionAndResult[0]);
     const answerUser = readlineSync.question('Your answer: ');

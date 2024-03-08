@@ -15,12 +15,12 @@ const isPrime = (num) => {
   return true;
 };
 
-const taskPrime = () => {
+const getQuestionAndAnswer = () => {
   const number = getRandomInt(1, 10);
   const question = number;
   const result = isPrime(number) ? 'yes' : 'no';
   return [question, result];
 };
 export default () => {
-  basisOfGames(noteToPrime, taskPrime);
+  basisOfGames(noteToPrime, getQuestionAndAnswer);
 };
