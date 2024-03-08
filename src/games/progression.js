@@ -1,19 +1,29 @@
 import basisOfGames from '../index.js';
 import getRandomInt from '../utils.js';
 
+const getProgression = (length, startValue, step) => {
+  const items = [];
+  for (let i = 0; i < length; i += 1) {
+    const num = startValue + (i * step);
+    items.push(num);
+  }
+  return items;
+};
+
 const noteToProgression = 'What number is missing in the progression?';
 const getQuestionAndAnswer = () => {
-  let number1 = getRandomInt(1, 10);
-  const number2 = getRandomInt(1, 10);
-  const randomNumber = getRandomInt(1, 8);
-  const arr = [];
-  for (let j = 0; j < 8; j += 1, (number1 += number2)) {
-    arr[j] = number1;
-  }
-  const removed = arr.splice(randomNumber, 1, '..');
-  const question = arr.join(' ');
-  const result = +removed.join('');
-  return [question, result.toString()];
+  const startValue = getRandomInt(1, 10);
+  const step = getRandomInt(1, 10);
+  const length = getRandomInt(1, 8);
+  const items = getProgression(length, startValue, step);
+  const questionPosition = getRandomInt(length);
+
+  const hiddenItem = items[questionPosition];
+  items[questionPosition] = '..';
+
+  const question = `Question: ${items.join(' ')}`;
+  const correctAnswer = hiddenItem.toString();
+  return [question, correctAnswer];
 };
 export default () => {
   basisOfGames(noteToProgression, getQuestionAndAnswer);
